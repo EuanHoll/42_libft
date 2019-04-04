@@ -1,12 +1,12 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         ::::::::             #
-#    Makefile                                           :+:    :+:             #
+#    Makefile                                           :+:      :+:    :+:    #
 #                                                      +:+                     #
 #    By: ehollidg <ehollidg@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2019/03/21 14:51:46 by ehollidg       #+#    #+#                 #
-#    Updated: 2019/03/29 15:50:04 by ehollidg      ########   odam.nl          #
+#    Updated: 2019/04/04 15:45:11 by euan             ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,7 +17,7 @@ SRC = atoi bzero isalnum isalpha isascii isdigit isprint itoa memalloc memccpy \
 	  strnstr strrchr strrev strstr tolower toupper skipwhitespace toabs \
 	  memmove striter striteri strjoin iswhitespace strtrim strcc strsplit \
 	  strskip strmap strmapi strnequ strequ strsub lstnew lstadd lstdel lstiter \
-	  lstcpyelm lstdelone lstmap strcontains lstcnt min max floor ceil
+	  lstcpyelm lstdelone lstmap strcontains lstcnt min max floor ceil realloc 
 SRCF = $(SRC:%=ft_%.c)
 OBJ = $(SRCF:%.c=%.o)
 NAME = libft.a
@@ -25,11 +25,11 @@ NAME = libft.a
 all: $(NAME)
 
 $(NAME):
-	gcc -Wall -Werror -Wextra -c $(SRCF)
+	gcc -Wall -Werror -Wextra -c $(SRCF) -I ./includes
 	ar -rcsv $(NAME) $(OBJ)
 
 clean:
-	rm -f $(OBJ)
+	rm -f $(OBJ) ./includes/libft.gch
 
 mclean: $(NAME) clean
 
