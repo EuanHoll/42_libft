@@ -1,12 +1,12 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         ::::::::             #
-#    Makefile                                           :+:      :+:    :+:    #
+#    Makefile                                           :+:    :+:             #
 #                                                      +:+                     #
 #    By: ehollidg <ehollidg@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2019/03/21 14:51:46 by ehollidg       #+#    #+#                 #
-#    Updated: 2019/04/04 15:52:52 by euan             ###   ########.fr        #
+#    Updated: 2019/04/05 13:37:33 by ehollidg      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ SRC = atoi bzero isalnum isalpha isascii isdigit isprint itoa memalloc memccpy \
 	  memmove striter striteri strjoin iswhitespace strtrim strcc strsplit \
 	  strskip strmap strmapi strnequ strequ strsub lstnew lstadd lstdel lstiter \
 	  lstcpyelm lstdelone lstmap strcontains lstcnt min max floor ceil realloc \
-          strtail strtailf
+	  strtail strtailf strfroc strjoinf strextend
 SRCF = $(SRC:%=ft_%.c)
 OBJ = $(SRCF:%.c=%.o)
 NAME = libft.a
