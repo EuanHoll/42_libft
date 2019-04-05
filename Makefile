@@ -17,7 +17,8 @@ SRC = atoi bzero isalnum isalpha isascii isdigit isprint itoa memalloc memccpy \
 	  strnstr strrchr strrev strstr tolower toupper skipwhitespace toabs \
 	  memmove striter striteri strjoin iswhitespace strtrim strcc strsplit \
 	  strskip strmap strmapi strnequ strequ strsub lstnew lstadd lstdel lstiter \
-	  lstcpyelm lstdelone lstmap strcontains lstcnt min max floor ceil realloc 
+	  lstcpyelm lstdelone lstmap strcontains lstcnt min max floor ceil realloc \
+          strtail strtailf
 SRCF = $(SRC:%=ft_%.c)
 OBJ = $(SRCF:%.c=%.o)
 NAME = libft.a
@@ -25,7 +26,7 @@ NAME = libft.a
 all: $(NAME)
 
 $(NAME):
-	gcc -Wall -Werror -Wextra -c $(SRCF) -I/includes
+	gcc -Wall -Werror -Wextra -c $(SRCF) -I ./includes
 	ar -rcsv $(NAME) $(OBJ)
 
 clean:

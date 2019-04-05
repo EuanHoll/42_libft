@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   libft.h                                            :+:      :+:    :+:   */
+/*   libft.h                                            :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/03/20 13:57:33 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/04/04 15:05:12 by euan             ###   ########.fr       */
+/*   Updated: 2019/04/05 11:58:22 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define LIBFT_H
 
 # include <unistd.h>
-# include "stdlib.h"
+# include <stdlib.h>
 
 typedef	struct	s_list
 {
@@ -88,6 +88,8 @@ int				ft_strnequ(char const *s1, char const *s2, size_t n);
 int				ft_strequ(char const *s1, char const *s2);
 char			*ft_strsub(char const *s, unsigned int start, size_t len);
 int				ft_strcontains(const char *s1, const char *s2);
+char			*ft_strtail(char *str, size_t i);
+char			*ft_strtailf(char *str, size_t i);
 int				ft_skipwhitespace(char *str, int i);
 t_list			*ft_lstnew(void const *content, size_t content_size);
 void			ft_lstadd(t_list **alst, t_list *new);
