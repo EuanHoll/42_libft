@@ -6,7 +6,7 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/03/22 17:47:56 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/03/29 13:06:42 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/04/08 18:31:32 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,12 @@ int		ft_strcc(char *s, char c)
 	int j;
 
 	if (!s)
-		return (0);
+		return (-1);
 	i = 0;
 	j = 0;
 	while (s[i])
 	{
-		(i != 0 && s[i] == c) ? j++ : 0;
+		(s[i] == c) ? j++ : 0;
 		i++;
 	}
 	return (j);
