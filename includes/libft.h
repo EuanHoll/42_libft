@@ -6,7 +6,7 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/03/20 13:57:33 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/04/10 13:28:44 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/04/10 15:15:52 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ void			*ft_memset(void *b, int c, size_t len);
 void			ft_bzero(void *s, size_t n);
 void			*ft_memchr(const void *s, int c, size_t n);
 void			*ft_memrchr(const void *s, int c, size_t n);
-void			*ft_realloc(void *str, size_t len);
+void			*ft_realloc(void *str, size_t len, size_t cpy);
 void			ft_putchar(char c);
 void			ft_putstr(char const *str);
 void			ft_putnbr(int n);
