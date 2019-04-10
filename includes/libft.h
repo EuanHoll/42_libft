@@ -6,7 +6,7 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/03/20 13:57:33 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/04/08 14:16:26 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/04/10 13:28:44 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -91,7 +91,7 @@ int				ft_strcontains(const char *s1, const char *s2);
 char			*ft_strtail(char *str, size_t i);
 char			*ft_strtailf(char *str, size_t i);
 size_t			ft_strfroc(char *str, char c);
-char			*ft_strjoinf(char *s1, char const *s2);
+char			*ft_strjoinf(char *s1, char *s2);
 char			*ft_strextend(char *str, size_t len);
 char			*ft_struntil(char *s1, size_t i);
 int				ft_skipwhitespace(char *str, int i);

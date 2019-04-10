@@ -6,7 +6,7 @@
 #    By: ehollidg <ehollidg@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2019/03/21 14:51:46 by ehollidg       #+#    #+#                 #
-#    Updated: 2019/04/08 14:16:50 by ehollidg      ########   odam.nl          #
+#    Updated: 2019/04/09 12:06:24 by ehollidg      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ NAME = libft.a
 all: $(NAME)
 
 $(NAME):
-	gcc -Wall -Werror -Wextra -c $(SRCF) -I ./includes
+	gcc -Wall -Werror -Wextra -c $(SRCF) -g -I ./includes
 	ar -rcsv $(NAME) $(OBJ)
 
 clean:
