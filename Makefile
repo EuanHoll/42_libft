@@ -18,7 +18,7 @@ SRC = atoi bzero isalnum isalpha isascii isdigit isprint itoa memalloc memccpy \
 	  memmove striter striteri strjoin iswhitespace strtrim strcc strsplit \
 	  strskip strmap strmapi strnequ strequ strsub lstnew lstadd lstdel lstiter \
 	  lstcpyelm lstdelone lstmap strcontains lstcnt min max floor ceil realloc \
-	  strtail strtailf strfroc strjoinf strextend struntil
+	  strtail strtailf strfroc strjoinf strextend struntil get_next_line
 SRCF = $(SRC:%=ft_%.c)
 OBJ = $(SRCF:%.c=%.o)
 NAME = libft.a
