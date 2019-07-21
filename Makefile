@@ -6,7 +6,7 @@
 #    By: ehollidg <ehollidg@student.codam.nl>         +#+                      #
 #                                                    +#+                       #
 #    Created: 2019/03/21 14:51:46 by ehollidg       #+#    #+#                 #
-#    Updated: 2019/06/07 13:12:12 by ehollidg      ########   odam.nl          #
+#    Updated: 2019/07/21 16:17:19 by ehollidg      ########   odam.nl          #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ SRC = atoi bzero isalnum isalpha isascii isdigit isprint itoa memalloc memccpy \
 	  strskip strmap strmapi strnequ strequ strsub lstnew lstadd lstdel lstiter \
 	  lstcpyelm lstdelone lstmap strcontains lstcnt min max floor ceil realloc \
 	  strtail strtailf strfroc strjoinf strextend struntil get_next_line \
-	  strgetoc
+	  strgetoc readfile
 SRCF = $(SRC:%=ft_%.c)
 OBJ = $(SRCF:%.c=%.o)
 NAME = libft.a

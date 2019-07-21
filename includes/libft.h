@@ -6,7 +6,7 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/03/20 13:57:33 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/06/07 13:11:55 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/07/21 16:17:06 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -118,5 +118,6 @@ double			ft_floor(double fl);
 double			ft_ceil(double cl);
 int				ft_get_next_line(const int fd, char **line);
 size_t			ft_strgetoc(char *str, char c, size_t i);
+char    		*ft_readfile(int id);
 
 #endif
