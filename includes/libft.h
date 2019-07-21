@@ -6,14 +6,14 @@
 /*   By: ehollidg <ehollidg@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2019/03/20 13:57:33 by ehollidg       #+#    #+#                */
-/*   Updated: 2019/07/21 16:17:06 by ehollidg      ########   odam.nl         */
+/*   Updated: 2019/07/21 17:31:54 by ehollidg      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# define BUFF_SIZE 32
+# define BUFF_SIZE 600000
 
 # include <unistd.h>
 # include <stdlib.h>
@@ -119,5 +119,6 @@ double			ft_ceil(double cl);
 int				ft_get_next_line(const int fd, char **line);
 size_t			ft_strgetoc(char *str, char c, size_t i);
 char    		*ft_readfile(int id);
+void    		*ft_memdup(void *src, size_t n);
 
 #endif
